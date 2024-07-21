@@ -91,7 +91,7 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_INIT_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_IMAGE_NAME := Image
-TARGET_KERNEL_SOURCE := kernel/xiaomi/socrates
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8550
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/kalama_GKI.config \
@@ -102,7 +102,7 @@ BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
 TARGET_NEEDS_DTBOIMAGE := true
 
 # Kernel (modules)
-TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/socrates-modules
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm8550-modules
 TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/mmrm-driver \
 	qcom/opensource/mm-drivers/hw_fence \
